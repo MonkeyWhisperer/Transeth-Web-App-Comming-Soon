@@ -43,9 +43,5 @@ $('#clock').countdown('2021/12/30').on('update.countdown', function(event) {
          + '<div><span>%M</span>min</div>'
          + '<div><span>%S</span>sec</div>'))
 
-	 var windowWidth = window.screen.width < window.outerWidth ?
-         window.screen.width : window.outerWidth;
-	 var mobile = windowWidth < 768;
-
-	if(mobile){ $(this).find("span").css('padding-bottom','10px'); }
+	if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { $(this).find("span").css('padding-bottom','10px'); }
 });
