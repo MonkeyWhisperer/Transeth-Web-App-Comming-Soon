@@ -35,7 +35,7 @@
  * Countdown
  */
 
-$('#clock').countdown('2021/12/30').on('update.countdown', function(event) {
+$('#clock').countdown('2022/2/30').on('update.countdown', function(event) {
        var $this = $(this).html(event.strftime(''
          + '<div><span>%-w</span>week%!w</div>'
          + '<div><span>%-d</span>day%!d</div>'
