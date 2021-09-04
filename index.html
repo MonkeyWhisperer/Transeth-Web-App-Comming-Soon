@@ -51,15 +51,24 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900&display=swap' rel="stylesheet" as="font" type='text/css'>
     <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
     <script>
-        $('body').mousemove(function () {
+        //$('body').mousemove(function () {
+        
+            
+        //});
+
+        //$(window).load(function () {
+            //$(".lty-playbtn").click();
+            //$(".lty-playbtn").attr("disabled", "disabled");
+
+            //setTimeout(function () { $(".overlay").css("background", "rgba(0, 0, 0, .4)"); }, 1500);
+        //});
+
+        $(window).on('load', function () {
             $(".lty-playbtn").click();
             $(".lty-playbtn").attr("disabled", "disabled");
-
             setTimeout(function () { $(".overlay").css("background", "rgba(0, 0, 0, .4)"); }, 1500);
-            
-        });
 
-
+        })
 
     </script>
 
