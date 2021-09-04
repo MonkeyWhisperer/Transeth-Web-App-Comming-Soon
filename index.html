@@ -10,15 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="style.min.css" rel="stylesheet">   
     <favicon resource="favicon/favicon.ico"></favicon>
-    <link rel="stylesheet" href="src/lite-yt-embed.min.css" />
 </head>
 <body>
     <div class="site-wrapper video-background">
-        <!--<lite-youtube videoid="bS1ZcRdSA2Y" params="controls=0&modestbranding=0&rel=0&enablejsapi=1&autoplay=1&mute=1&loop=1" allowfullscreen id="myVideo" style="position: fixed; top: 0; left: 0; bottom: 0; right: 0; width: 120%; height: 120%; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 0; margin-top: -5%; background-color: black;"></lite-youtube>-->
-        <video src="blackscreen.mp4" autoplay muted  id="myVideo">
-            <!--<source src="blackscreen.mp4" type="video/mp4">-->            
-        </video>
-        <!--<div class="overlay" style="background:black"></div>-->
+        <video src="blackscreen2.mp4" autoplay muted  id="myVideo"></video>
         <div class="overlay"></div>
         <div class="site-wrapper-inner">
             <div class="masthead clearfix">
@@ -49,48 +44,23 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="src/lite-yt-embed.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/custom.min.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900&display=swap' rel="stylesheet" as="font" type='text/css'>
     <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
     <script>
-
         var myvid = document.getElementById('myVideo');
         var myvids = [
-            "blackscreen.mp4",
+            "blackscreen2.mp4",
             "videoplayback.mp4"
         ];
         var activeVideo = 0;
 
         myvid.addEventListener('ended', function (e) {
-            // update the active video index
             activeVideo = (++activeVideo) % myvids.length;
-
-            // update the video source and play
             myvid.src = myvids[activeVideo];
             myvid.play();
         });
-
-        //$('body').mousemove(function () {
-        
-            
-        //});
-
-        //$(window).load(function () {
-            //$(".lty-playbtn").click();
-            //$(".lty-playbtn").attr("disabled", "disabled");
-
-            //setTimeout(function () { $(".overlay").css("background", "rgba(0, 0, 0, .4)"); }, 1500);
-        //});
-
-        //$(window).on('load', function () {
-        //    $(".lty-playbtn").click();
-        //    $(".lty-playbtn").attr("disabled", "disabled");
-        //    setTimeout(function () { $(".overlay").css("background", "rgba(0, 0, 0, .4)"); }, 1500);
-
-        //})
-
     </script>
 
 </body>
