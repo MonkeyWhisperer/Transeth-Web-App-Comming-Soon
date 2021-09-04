@@ -15,7 +15,7 @@
 <body>
     <div class="site-wrapper video-background">
         <lite-youtube videoid="bS1ZcRdSA2Y" params="controls=0&modestbranding=0&rel=0&enablejsapi=1&autoplay=1&mute=1&loop=1" allowfullscreen id="myVideo" style="position: fixed; top: 0; left: 0; bottom: 0; right: 0; width: 120%; height: 120%; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 0; margin-top: -5%; background-color: black;"></lite-youtube>
-        <div class="overlay"></div>
+        <div class="overlay" style="background:black"></div>
         <div class="site-wrapper-inner">
             <div class="masthead clearfix">
                 <div class="inner">
@@ -51,10 +51,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900&display=swap' rel="stylesheet" as="font" type='text/css'>
     <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
     <script>
-        //$('.cover-heading').mousemove(function () {
-        //    $(".lty-playbtn").click();
+        $('body').mousemove(function () {
+            $(".lty-playbtn").click();
+            $(".lty-playbtn").attr("disabled", "disabled");
 
-        //});
+            setTimeout(function () { $(".overlay").css("background", "rgba(0, 0, 0, .4)"); }, 1500);
+            
+        });
 
 
 
