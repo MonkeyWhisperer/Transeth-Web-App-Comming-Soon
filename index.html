@@ -27,44 +27,50 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="src/lite-yt-embed.css" />
+
 </head>
 <body>
     <div class="site-wrapper video-background">
         <!--<video autoplay muted loop id="myVideo">
-            <source src="https://youtu.be/k_okcNVZqqI" type="video/mp4">
-        </video>-->
+        <source src="https://youtu.be/k_okcNVZqqI" type="video/mp4">
+    </video>-->
+        <!--<iframe src="https://www.youtube.com/embed/bS1ZcRdSA2Y?autoplay=1&mute=1&modestbranding=1&controls=0" id="myVideo" style="position:fixed; top:0; left:0; bottom:0; right:0; width:120%; height:120%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; margin-left:-10%;">
+    </iframe>-->
 
-        <iframe  src="https://www.youtube.com/embed/bS1ZcRdSA2Y?autoplay=1&mute=1&modestbranding=1&controls=0"  id="myVideo" style="position:fixed; top:0; left:0; bottom:0; right:0; width:120%; height:120%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; margin-left:-10%;">
-</iframe>
+    <lite-youtube videoid="bS1ZcRdSA2Y" params="controls=0&modestbranding=0&rel=0&enablejsapi=1&autoplay=1&mute=1&loop=1" allowfullscreen id="myVideo" style="position: fixed; top: 0; left: 0; bottom: 0; right: 0; width: 120%; height: 120%; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 0; margin-top: -5%; background-color: black;"></lite-youtube>
 
-        <div class="overlay"></div>
-        <div class="site-wrapper-inner">
-            <div class="masthead clearfix">
-                <div class="inner">
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-                            <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://discord.gg/DNyG4Ea9hM" target="_blank"><i class="fab fa-discord"></i></a></li>
-                            <li><a href="#"><i class="fab fa-apple"></i></a></li>
-                            <li><a href="https://play.google.com/store/apps/details?id=org.Transeth.Cluster" target="_blank"><i class="fab fa-google-play"></i></a></li>
-                            <li><a href="#"><i class="fab fa-ethereum"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
+
+    <div class="overlay"></div>
+    <div class="site-wrapper-inner">
+        <div class="masthead clearfix">
+            <div class="inner">
+                <nav>
+                    <ul class="nav masthead-nav">
+                        <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                        <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://discord.gg/DNyG4Ea9hM" target="_blank"><i class="fab fa-discord"></i></a></li>
+                        <li><a href="#"><i class="fab fa-apple"></i></a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=org.Transeth.Cluster" target="_blank"><i class="fab fa-google-play"></i></a></li>
+                        <li><a href="#"><i class="fab fa-ethereum"></i></a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="cover-container" style="cursor:default">
-                <div class="inner cover">
-                    <h1 class="cover-heading"> <i class="fa fa-rocket fa-fw" style="margin-right:5px; width:50px !important; min-height:2px;"></i>LAUNCHING SOON</h1>
-                    <p class="lead">Transeth binds all the experts required for transitioning analog businesses into the ethereal realm</p>
-                    <div id="clock" style="min-height:220px"></div>
-                </div>
-                <div class="mastfoot">
-                    <div class="inner">
-                    </div>
+        </div>
+        <div class="cover-container" style="cursor:default">
+            <div class="inner cover">
+                <h1 class="cover-heading"> <i class="fa fa-rocket fa-fw" style="margin-right:5px; width:50px !important; min-height:2px;"></i>LAUNCHING SOON</h1>
+                <p class="lead">Transeth binds all the experts required for transitioning analog businesses into the ethereal realm</p>
+                <div id="clock" style="min-height:220px"></div>
+            </div>
+            <div class="mastfoot">
+                <div class="inner">
                 </div>
             </div>
         </div>
+    </div>
+
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.0/device.min.js" integrity="sha512-kMi+fPb7qtvA4AWgNgLYoeQ7pE460J3LSkEzxUsamQf5JelV+3SpLzzFM1EW+NM9EvrLCP7PA/HPCfGF+OjC3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -75,5 +81,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900&display=swap' rel="stylesheet" as="font" type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="preload" as="font" type="text/css">
     <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
+    <script src="src/lite-yt-embed.js"></script>
+
 </body>
 </html>
