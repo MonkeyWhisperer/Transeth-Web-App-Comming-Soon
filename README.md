@@ -1,5 +1,5 @@
 # Transeth
-Source code for transeth.org
+Source code for https://transeth.org
 
 Graded by Hubspot as flawless https://website.grader.com/tests/transeth.org
 
