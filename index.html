@@ -7,17 +7,17 @@
     <meta name="description" content="Transeth binds all the experts required for transitioning analog businesses into the ethereal realm">
     <meta name="author" content="Transeth Cluser">
     <title>Transeth</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" async media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" async>
     <link href="style.min.css" rel="stylesheet" async>
     <favicon resource="favicon/favicon.ico"></favicon>
 </head>
-<body>
+<body style=" overflow: hidden; margin:0px !important">
     <div class="site-wrapper video-background">
-        <video src="blackscreen2.mp4" autoplay muted  id="myVideo"></video>
+        <video src="blackscreen2.mp4" autoplay muted id="myVideo"></video>
         <div class="overlay"></div>
         <div class="site-wrapper-inner">
             <div class="masthead clearfix">
-                <div class="inner">
+                <div class="inner" >
                     <nav>
                         <ul class="nav masthead-nav">
                             <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
@@ -47,21 +47,6 @@
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/custom.min.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap' rel="stylesheet" as="font" type='text/css'>
-    <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
-    <script>
-        var myvid = document.getElementById('myVideo');
-        var myvids = [
-            "blackscreen2.mp4",
-            "videoplayback.mp4"
-        ];
-        var activeVideo = 0;
-
-        myvid.addEventListener('ended', function (e) {
-            activeVideo = (++activeVideo) % myvids.length;
-            myvid.src = myvids[activeVideo];
-            myvid.play();
-        });
-    </script>
-
+    <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>  
 </body>
 </html>
