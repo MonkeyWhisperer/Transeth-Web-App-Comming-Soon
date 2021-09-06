@@ -15,7 +15,6 @@ Graded by Hubspot as flawless 💎
 Google page speed insights at 💯
 <br/>
 <br/>
-<a href="https://developers.google.com/speed/pagespeed/insights/?url=transeth.org&tab=desktop">
-  <img src="screenshots/transeth-pagespeed.jpg">
-</a>
+<img src="screenshots/transeth-pagespeed.jpg">
+
 
