@@ -12,7 +12,7 @@ Graded by Hubspot as flawless 💎
 <br/>
 <br/>
 <br/>
-Google page speed insights at 💯
+Google page speed insights scored as 💯
 <br/>
 <br/>
 <img src="screenshots/transeth-pagespeed.jpg">
