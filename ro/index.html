@@ -33,7 +33,7 @@
 </head>
 <body style=" overflow: hidden; margin:0px !important; background-color:black">
     <div class="site-wrapper video-background">
-        <video src="./../videos/load.mp4" autoplay muted id="myVideo"></video>
+        <video src="/videos/load.mp4" autoplay muted id="myVideo"></video>
         <div class="overlay"></div>
         <div class="site-wrapper-inner">
             <div class="masthead clearfix">
@@ -94,22 +94,22 @@
   gtag('js', new Date());
   gtag('config', 'G-QF6T9BGDM4');
 
-    var thisLanguage = 'en';
+    //var thisLanguage = 'en';
 
-    $(document).ready(function () {
-        var userLang = navigator.language || navigator.userLanguage;  
-        if (userLang != thisLanguage) {
+    //$(document).ready(function () {
+    //    var userLang = navigator.language || navigator.userLanguage;  
+    //    if (userLang != thisLanguage) {
 
-            switch (userLang) {
-                case 'ro-RO':
-                    window.location.href = window.location.origin + '/ro';
-                    break;             
-                default:
-                    break;
-            }
+    //        switch (userLang) {
+    //            case 'ro-RO':
+    //                window.location.href = window.location.origin + '/ro';
+    //                break;             
+    //            default:
+    //                break;
+    //        }
 
-        }
-    });
+    //    }
+    //});
 
 </script>
 </body>
