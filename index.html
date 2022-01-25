@@ -97,14 +97,12 @@
     var thisLanguage = 'en';
 
     $(document).ready(function () {
-        var userLang = navigator.language || navigator.userLanguage;
-        alert(userLang);
-        alert(window.location.origin);
+        var userLang = navigator.language || navigator.userLanguage;  
         if (userLang != thisLanguage) {
 
             switch (userLang) {
                 case 'ro-RO':
-                    window.location.href = window.location.origin + '/ro';
+                    window.location.href = window.location.origin + '/ro/index.html';
                     break;             
                 default:
                     break;
