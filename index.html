@@ -89,10 +89,10 @@
     </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
 <script>
-    $(window).load(function () {
+    $(document).ready(function () {
         var userLang = navigator.language || navigator.userLanguage;
         if (userLang != thisLanguage) {
-
+            
             switch (userLang) {
                 case 'ro-RO':
                     window.location.href = window.location.origin + '/ro';
