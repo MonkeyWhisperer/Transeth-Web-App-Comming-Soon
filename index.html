@@ -89,21 +89,14 @@
     </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QF6T9BGDM4');
-
-    var thisLanguage = 'en';
-
     $(document).ready(function () {
-        var userLang = navigator.language || navigator.userLanguage;  
+        var userLang = navigator.language || navigator.userLanguage;
         if (userLang != thisLanguage) {
 
             switch (userLang) {
                 case 'ro-RO':
                     window.location.href = window.location.origin + '/ro';
-                    break;             
+                    break;
                 default:
                     break;
             }
@@ -111,6 +104,11 @@
         }
     });
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QF6T9BGDM4');
+  var thisLanguage = 'en';  
 </script>
 </body>
 </html>
