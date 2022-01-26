@@ -89,20 +89,18 @@
     </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
 <script>
-    //$(document).ready(function () {
-    //    var userLang = navigator.language || navigator.userLanguage;
-    //    if (userLang != thisLanguage) {
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang != thisLanguage) {
             
-    //        switch (userLang) {
-    //            case 'ro-RO':
-    //                window.location.href = window.location.origin + '/ro';
-    //                break;
-    //            default:
-    //                break;
-    //        }
+            switch (userLang) {
+                case 'ro-RO':
+                    window.location.href = window.location.origin + '/ro';
+                    break;
+                default:
+                    break;
+            }
 
-    //    }
-    //});
+        }
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
