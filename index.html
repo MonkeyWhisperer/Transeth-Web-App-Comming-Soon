@@ -90,6 +90,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
 <script>
     $(document).ready(function () {
+        var thisLanguage = 'en';
         var userLang = navigator.language || navigator.userLanguage;
         if (userLang != thisLanguage) {
             $(".site-wrapper").hide();
@@ -108,7 +109,6 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-QF6T9BGDM4');
-  var thisLanguage = 'en';  
 </script>
 </body>
 </html>
