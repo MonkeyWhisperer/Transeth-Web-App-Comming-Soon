@@ -92,7 +92,7 @@
     $(document).ready(function () {
         var userLang = navigator.language || navigator.userLanguage;
         if (userLang != thisLanguage) {
-            
+            $(".site-wrapper").hide();
             switch (userLang) {
                 case 'ro-RO':
                     window.location.href = window.location.origin + '/ro';
