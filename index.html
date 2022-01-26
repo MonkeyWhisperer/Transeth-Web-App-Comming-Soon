@@ -30,6 +30,20 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script>
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang != thisLanguage) {
+
+            switch (userLang) {
+                case 'ro-RO':
+                    window.location.href = window.location.origin + '/ro';
+                    break;
+                default:
+                    break;
+            }
+
+        }
+    </script>
 </head>
 <body style=" overflow: hidden; margin:0px !important; background-color:black">
     <div class="site-wrapper video-background">
@@ -89,19 +103,6 @@
     </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
 <script>
-        var userLang = navigator.language || navigator.userLanguage;
-        if (userLang != thisLanguage) {
-            
-            switch (userLang) {
-                case 'ro-RO':
-                    window.location.href = window.location.origin + '/ro';
-                    break;
-                default:
-                    break;
-            }
-
-        }
-
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
