@@ -92,6 +92,8 @@
     $(document).ready(function () {
         var thisLanguage = 'en';
         var userLang = navigator.language || navigator.userLanguage;
+	console.log("navigator.language", navigator.language);
+	console.log("navigator.userLanguage", navigator.userLanguage);
         if (userLang != thisLanguage) {
             $(".site-wrapper").hide();
             switch (userLang) {
