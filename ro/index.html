@@ -30,6 +30,15 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./../favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <style>
+        @media (max-width: 1000px) 
+        {
+            video 
+            {
+                display: none !important;
+            }    
+        }
+    </style>
 </head>
 <body style=" overflow: hidden; margin:0px !important; background-color:black">
     <div class="site-wrapper video-background">
@@ -55,13 +64,10 @@
             </div>
             <div class="cover-container" style="cursor:default">
                 <div class="inner cover">
-                    <!--<h1 class="cover-heading">TRANSETH</h1>-->
                     <div style="width:100%; float:left" ><img src="./../screenshots/logo.png" id="logo" style="width:100px; margin-bottom:40px; margin-top:-120px;" /></div>
                     <p style="height:110px; margin-top:40px; font-size:24px;" class="txt-rotate lead"
                        data-period="2000"
-                       data-rotate='[ "Conectăm experții necesari tranziției organizațiilor analogice în tărâmul eteric", "Dezvoltăm, documentăm și oferim suport codului cu sursă deschisă a ecosistemului Transeth", "Ajutăm organizațiile să devină neutre din punct de vedere al emisiilor de carbon prin digitalizarea proceselor", "Oferim organizațiilor un avantaj inteligent și interconexiune astfel încât să poată prospera", "Eliminăm intermediarii pentru beneficiarii ecosistemului Transeth implementând soluții specifice blockchain", "Promovăm și dezvoltăm politici orientate către cluster la nivel mondial în domeniul IT&C", "Dacă v-am stârnit interesul continuați explorarea ecosistemului Transeth \\m/" ]'></p>
-
-               
+                       data-rotate='[ "Conectăm experții necesari tranziției organizațiilor analogice în tărâmul eteric", "Dezvoltăm, documentăm și oferim suport codului cu sursă deschisă a ecosistemului Transeth", "Ajutăm organizațiile să devină neutre din punct de vedere al emisiilor de carbon prin digitalizarea proceselor", "Oferim organizațiilor un avantaj inteligent și interconexiune astfel încât să poată prospera", "Eliminăm intermediarii pentru beneficiarii ecosistemului Transeth implementând soluții specifice blockchain", "Promovăm și dezvoltăm politici orientate către cluster la nivel mondial în domeniul IT&C", "Dacă v-am stârnit interesul continuați explorarea ecosistemului Transeth \\m/" ]'></p>               
                     <a href="./faq.html" >
                         <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 140px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; ">Continuă</p>
                     </a>
@@ -72,7 +78,7 @@
                 </div>
             </div>
          <div style="position: absolute; bottom: -20px; width:100%;">
-                <a href="./../screenshots/Transeth MPN letter.pdf" target="_blank">
+                <a id="msft_url" href="./../screenshots/Transeth MPN letter.pdf" target="_blank">
                     <img src="./../screenshots/Transeth MPN.png" style=" display: block; margin-left: auto; margin-right: auto; width: 400px; " />
                 </a>
             </div>
@@ -109,76 +115,85 @@
             {
                 margin-top:160px !important;
             }
-        }
 
-
-
-    </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QF6T9BGDM4');
-
-    setTimeout(function () {
-    var TxtRotate = function (el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtRotate.prototype.tick = function () {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-        var that = this;
-        var delta = 30;
-
-        if (this.isDeleting) { delta /= 10; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-        }
-
-        setTimeout(function () {
-            that.tick();
-        }, delta);
-    };
-
-        var elements = document.getElementsByClassName('txt-rotate');
-        for (var i = 0; i < elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-rotate');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            video
+            {
+                display:none !important;
             }
         }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
-        document.body.appendChild(css);
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QF6T9BGDM4');
 
-    }, 2000);
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#msft_url").attr("href","https://appsource.microsoft.com/en-us/marketplace/partner-dir/61cd44ba-1a86-46fc-92ab-5f92fc8df032/overview")
+        }
 
-</script>
+
+        setTimeout(function () {
+
+
+        var TxtRotate = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 30;
+
+            if (this.isDeleting) { delta /= 10; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
+            document.body.appendChild(css);
+
+        }, 2000);
+
+    </script>
 </body>
 </html>
