@@ -1,7 +1,5 @@
-# Transeth
+# Transeth https://v0.transeth.org
 Launch website with timer and multi language support based on user's environment
-<br/>
-Source code for https://v0.transeth.org
 <br/>
 <br/>
 <br/>
